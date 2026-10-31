@@ -1,0 +1,10 @@
+*.xel
+*.bak
+*.trn
+*.mdf
+*.ndf
+*.ldf
+*.zip
+.vs/
+.vscode/
+
