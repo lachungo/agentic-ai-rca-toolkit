@@ -36,6 +36,9 @@ The report can preserve more than one supported culprit. It also links a selecte
 
 The `sql/engine` directory intentionally preserves the cumulative numbered development chain. Later scripts repair or supersede earlier objects. It is engineering history as well as source; do not execute the folder alphabetically without following the deployment guide.
 
+> [!WARNING]
+> **Executable SQL Server code:** This repository contains scripts that create database objects, Extended Events sessions, SQL Agent components, evidence-collection processes, and controlled pressure workloads. Do not execute any script against a production environment without reviewing the code and deployment guide, validating compatibility and permissions, testing in an isolated non-production environment, and preparing approved rollback procedures.
+
 ## Demonstrated result
 
 The certified multi-culprit report demonstrates:
@@ -78,6 +81,16 @@ The repository excludes captured `.xel` files, credentials, machine-specific sec
 - Certification: [`docs/CERTIFICATION.md`](docs/CERTIFICATION.md)
 - Interview talk track: [`docs/TECHNICAL_TALK_TRACK.md`](docs/TECHNICAL_TALK_TRACK.md)
 - Publication boundaries: [`docs/PUBLICATION_SCOPE.md`](docs/PUBLICATION_SCOPE.md)
+
+## Responsible use and support
+
+This repository is provided for technical review, portfolio demonstration, and controlled evaluation. Any implementation must be independently reviewed and adapted for the target environment.
+
+You are responsible for validating SQL Server version and edition compatibility, permissions, security requirements, service identities, file paths, schedules, certificates, workload impact, backups, change controls, and rollback procedures.
+
+Use of this repository is at your own risk. No warranty is provided, and the author is not responsible for data loss, service interruption, performance degradation, security exposure, or other consequences resulting from its use.
+
+For implementation guidance, environment-specific review, or professional assistance, contact [Louis Achungo on LinkedIn](https://www.linkedin.com/in/louis-achungo/).
 
 ## Ownership
 
