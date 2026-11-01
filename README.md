@@ -18,7 +18,20 @@ The toolkit acts as a database flight recorder...
 
 ## Complements Automatic Plan Correction—Does Not Compete with It
 
-[New APC content here]
+This toolkit does not replace or compete with SQL Server Automatic Plan Correction (APC). APC performs an important but deliberately focused job: it uses Query Store history to detect plan-choice regressions and can force a previously known good plan. Its recommendation evidence centers primarily on CPU-performance statistics, execution counts, and aborted or error counts.
+
+The Agentic AI RCA Toolkit addresses the broader question APC was not designed to answer:
+
+> **Why was the database slow during this exact incident window?**
+
+A slowdown may be caused by blocking, scheduler pressure, storage latency, memory-grant spills, TempDB contention, transaction-log pressure, connectivity failures, or several interacting conditions—even when no plan regression exists. The toolkit correlates evidence across seven performance domains, preserves multiple supported causes, and connects the affected execution to its runtime parameters and matching actual execution plan.
+
+`OPTION (RECOMPILE)` and optimizer-generated plans also require careful interpretation. Recompilation can produce a plan tailored to the current parameter values, but that temporary plan is discarded after execution and introduces compilation cost. Optimizer cardinality and cost estimates are predictions rather than proof of what occurred at runtime. This toolkit therefore emphasizes captured runtime evidence, actual execution behavior, parameter values, and cross-domain correlation instead of treating a compiled or estimated plan as the complete root cause.
+
+**In practical terms:**
+
+- **APC asks:** Did this query regress because SQL Server selected a worse plan?
+- **The Agentic AI RCA Toolkit asks:** What actually made the database slow during this incident?
 
 It analyzes:
 
