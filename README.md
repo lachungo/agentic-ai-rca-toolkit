@@ -92,12 +92,26 @@ Use of this repository is at your own risk. No warranty is provided, and the aut
 
 For implementation guidance, environment-specific review, or professional assistance, contact [Louis Achungo on LinkedIn](https://www.linkedin.com/in/louis-achungo/).
 
+## 🔗 Connect
+
+- 🌐 Portfolio: https://sql-it-techsolutions.com/  
+- 💼 LinkedIn: https://linkedin.com/in/louis-achungo  
+
+---
+
+⭐ If this helped, consider starring the repo.
+
+---
+
+**Louis Achungo**  
+Principal SQL Server Architect | Performance Engineering | HA/DR | Azure SQL & AWS
+
+*Building reliable, observable, and scalable database platforms through architecture, automation, and operational excellence.*
+
+---
+
+
 ## Ownership
 
 Copyright © 2026 Louis Achungo. All rights reserved. Source availability is not an open-source license. See [`LICENSE`](LICENSE).
 
-## Author
-
-**Louis Achungo**  
-Principal SQL Server Architect  
-[Portfolio](https://sql-it-techsolutions.com/) · [LinkedIn](https://www.linkedin.com/in/louis-achungo/) · [GitHub](https://github.com/lachungo)
