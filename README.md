@@ -12,6 +12,18 @@ It is both a technical portfolio and a retained consulting asset. The code is av
 
 The toolkit acts as a database flight recorder. It captures an incident window, correlates Extended Events with sampled server evidence, builds independent cause candidates, applies deterministic cross-domain arbitration, and produces a compact HTML incident report.
 
+## What it does
+
+The toolkit acts as a database flight recorder...
+
+## Complements Automatic Plan Correction—Does Not Compete with It
+
+[New APC content here]
+
+It analyzes:
+
+1. CPU and scheduler pressure
+
 It analyzes:
 
 1. CPU and scheduler pressure
