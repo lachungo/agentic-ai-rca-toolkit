@@ -12,10 +12,6 @@ It is both a technical portfolio and a retained consulting asset. The code is av
 
 The toolkit acts as a database flight recorder. It captures an incident window, correlates Extended Events with sampled server evidence, builds independent cause candidates, applies deterministic cross-domain arbitration, and produces a compact HTML incident report.
 
-## What it does
-
-The toolkit acts as a database flight recorder...
-
 ## Complements Automatic Plan Correction—Does Not Compete with It
 
 This toolkit does not replace or compete with SQL Server Automatic Plan Correction (APC). APC performs an important but deliberately focused job: it uses Query Store history to detect plan-choice regressions and can force a previously known good plan. Its recommendation evidence centers primarily on CPU-performance statistics, execution counts, and aborted or error counts.
@@ -32,10 +28,6 @@ A slowdown may be caused by blocking, scheduler pressure, storage latency, memor
 
 - **APC asks:** Did this query regress because SQL Server selected a worse plan?
 - **The Agentic AI RCA Toolkit asks:** What actually made the database slow during this incident?
-
-It analyzes:
-
-1. CPU and scheduler pressure
 
 It analyzes:
 
@@ -97,6 +89,10 @@ This is real SQL Server instrumentation, not a toy package. It uses Extended Eve
 
 The repository excludes captured `.xel` files, credentials, machine-specific secrets, and personal server identities. Paths, database names, schedules, permissions, certificates, and service identities must be reviewed for each environment.
 
+## Roadmap
+
+The current release is a deterministic, evidence-driven RCA engine. The next stage is an MCP-based AI agent layer, now in development, that will interpret this evidence, reason across performance domains, explain root causes, and recommend corrective actions.
+
 ## How to evaluate the work
 
 - Recruiter overview: [`docs/RECRUITER_WALKTHROUGH.md`](docs/RECRUITER_WALKTHROUGH.md)
@@ -129,7 +125,7 @@ For implementation guidance, environment-specific review, or professional assist
 ---
 
 **Louis Achungo**  
-SQL Server dba | SQL Server Architect | Performance Engineering | HA/DR | Azure SQL & AWS
+Senior SQL Server DBA | SQL Server Architect | Performance Engineering | HA/DR | Azure SQL & AWS
 
 *Building reliable, observable, and scalable database platforms through architecture, automation, and operational excellence.*
 
