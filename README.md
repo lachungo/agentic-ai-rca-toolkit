@@ -129,7 +129,7 @@ For implementation guidance, environment-specific review, or professional assist
 ---
 
 **Louis Achungo**  
-Principal SQL Server Architect | Performance Engineering | HA/DR | Azure SQL & AWS
+SQL Server dba | SQL Server Architect | Performance Engineering | HA/DR | Azure SQL & AWS
 
 *Building reliable, observable, and scalable database platforms through architecture, automation, and operational excellence.*
 
